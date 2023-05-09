@@ -69,5 +69,11 @@ namespace NSE.WebApp.MVC.Controllers
         {
             return RedirectToAction("Index", "Home");
         }
+
+        private async Task RealizarLogin(UsuarioRespostaLoginViewModel usuarioResposta)
+        {
+            
+            
+        }
     }
 }
