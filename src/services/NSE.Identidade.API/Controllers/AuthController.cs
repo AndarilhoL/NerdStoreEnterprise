@@ -33,6 +33,8 @@ namespace NSE.Identidade.API.Controllers
         [HttpPost("registrar-usuario")]
         public async Task<ActionResult> Registrar(UsuarioRegistroViewModel usuarioRegistro)
         {
+            return new StatusCodeResult(401);
+
             if (!ModelState.IsValid) return CustomResponse(ModelState);
 
             var user = new IdentityUser
